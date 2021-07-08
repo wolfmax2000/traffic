@@ -1,0 +1,157 @@
+
+.row-sticky {
+    position: sticky;
+    top: 0;
+}
+
+.preview-card a.item .card-title, .view-card a.item .card-title, #preview2 .preview-card a.item .card-title {
+    font-size: 1.8rem!important;
+}
+
+.container-width {
+    max-width: 958px;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 767px)
+{
+    .without_sliders a.item {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        overflow: hidden;
+        margin-right: auto;
+    }
+}
+
+a.item {
+    display: flex;
+    flex-direction: column;
+    max-width: 314px;
+    border-radius: 4px;
+    margin: 4px;
+    max-height: 314px;
+    width: 100%;
+}
+
+.item-sec-row {
+    flex-direction: row-reverse!important;
+    max-width: 640px!important;
+}
+
+.container__wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.container__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card_col_1 {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    align-items: self-end;
+}
+
+.item-sec-row .card_col_1 {
+    height: auto;
+    width: 60%;
+}
+
+.card-img-out {
+    position: relative;
+    height: auto;
+    padding: 1.25rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 0px;
+}
+
+.item-sec-row .card-img-out {
+    width: 40%;
+    height: auto;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.item__gradient {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    transition: all .5s ease;
+    top: 50%;
+    bottom: -2px;
+}
+
+.item-sec-row .item__gradient {
+    position: absolute;
+    right: 0;
+    left: 100%;
+    transition: all .5s ease;
+    top: 0%;
+    bottom: 0px;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.item-sec-row .card-title {
+    font-size: 1.4rem;
+}
+
+.center-block {
+    text-align: center;
+}
+
+/* VIEW CARD */
+.view-card a.item{
+	max-width: 644px!important;
+	width: auto;
+}
+.view-card a.item .card_col_1 {
+	height: 320px;
+}
+.view-card .card-img-out {
+	height: 160px;
+}
+
+.card-des {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+a.item:hover .card-img {
+	opacity: .4;
+	transition: opacity .1s ease-out;
+}
+a.item:hover  {
+	text-decoration: none;
+}
